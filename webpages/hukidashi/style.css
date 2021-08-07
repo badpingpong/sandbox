@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+.hukidashi {
+  position: relative;
+  background-color: #efefef;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.hukidashi::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50%;
+  border-top: 20px solid #efefef;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  transform: translateX(-50%);
+}
